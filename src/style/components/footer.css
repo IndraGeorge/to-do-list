@@ -1,0 +1,45 @@
+:root {
+    --input-bg-color:#535c68
+}
+
+.input{
+    background-color: var(--input-bg-color);
+    height: 70px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.add{
+    text-align: center;
+    position: relative;
+    left: 47%;
+    top: -15px;
+    font-size: 35px;
+}
+
+.invisible{
+    display:none;
+}
+
+.name{
+    width:496px;
+    height: 68px;
+    border-width:0px;
+    border-radius:0px 0px 10px 10px;
+    background-color: var(--input-bg-color);
+    outline: none;  
+    color:white;
+}
+
+.btn-save{
+    position:absolute;
+    right:170px;
+    bottom:72px;
+    background-color: var(--input-bg-color);
+    border-style: none;
+    color:white;
+    cursor:pointer;
+}
+
+.btn-save:hover{
+    text-decoration:underline;
+}

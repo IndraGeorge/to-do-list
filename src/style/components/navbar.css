@@ -1,0 +1,18 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:15px;
+    padding:0;
+    margin:0;
+    border-bottom:1px solid #636e72;
+}
+
+.link {
+    list-style-type: none;
+    margin:12px 15px 8px 15px;
+}
+
+.active{
+    text-decoration: none;
+    color:#fff;
+}

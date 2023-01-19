@@ -1,0 +1,18 @@
+body{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #487eb0;
+    color:#fff;
+}
+
+.container {  
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 500px;
+    min-height: 500px;
+    background-color: #2d3436;
+    border-radius:10px;
+}
