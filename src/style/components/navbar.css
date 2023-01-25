@@ -16,3 +16,8 @@
     text-decoration: none;
     color:#fff;
 }
+
+.border{
+    border-bottom: 2px solid #2980b9;
+    padding:0px 0px 7px 0px;
+}

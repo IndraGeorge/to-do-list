@@ -7,19 +7,19 @@ function NavBar() {
             <ul className='header'>
 
                 <li className='link'>
-                    <NavLink className='active' to='/'>
+                    <NavLink className={({ isActive }) => isActive ? 'active border' : 'active'} to='/'>
                         My tasks
                     </NavLink>
                 </li>
 
                 <li className='link show'>
-                    <NavLink className='active' to='/list'>
+                    <NavLink className={({ isActive }) => isActive ? 'active border' : 'active'} to='/list'>
                         Name list
                     </NavLink>
                 </li>
 
                 <li className='link'>
-                    <NavLink className='active' to='/newlist'>
+                    <NavLink className={({ isActive }) => isActive ? 'active border' : 'active'} to='/newlist'>
                         + New list
                     </NavLink>
                 </li>

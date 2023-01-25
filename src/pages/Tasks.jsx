@@ -17,9 +17,10 @@ function Tasks() {
 
 
     const deleteTask = (index) => {
-        const filter = data.filter(element => element !== items[index])
-        localStorage.setItem('items', JSON.stringify(filter));
-        setItems(filter)
+        const filterTask = items
+        filterTask.splice(index, 1)
+        setItems([...filterTask])
+        localStorage.setItem('items', JSON.stringify(filterTask));
     }
 
     return (
