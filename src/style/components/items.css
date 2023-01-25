@@ -1,0 +1,35 @@
+.task{
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353b48;
+    border: 1px solid white;
+    height: 24px;
+}
+
+.barre{
+    text-decoration-line: line-through;
+}
+
+
+.block-check {
+    display: flex;
+    align-items: center;
+    padding: 1px 4px;
+}
+
+.check{
+    cursor: pointer;
+}
+
+.name{
+    padding-left:10px;
+}
+
+.delete{
+    background:#353b48;
+    border-style:none;
+    color:white;
+    cursor:pointer;
+}

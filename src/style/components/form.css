@@ -2,11 +2,18 @@
     --input-bg-color:#535c68
 }
 
+form{
+    display:flex;
+    align-items: center;
+}
+
+
 .input{
-    background-color: var(--input-bg-color);
+    background:var(--input-bg-color);
     height: 70px;
     border-radius: 0px 0px 10px 10px;
 }
+
 
 .add{
     text-align: center;
@@ -14,31 +21,39 @@
     left: 47%;
     top: -15px;
     font-size: 35px;
+    cursor: pointer;
 }
+
 
 .invisible{
     display:none;
 }
 
-.name{
+
+#name{
     width:496px;
     height: 68px;
     border-width:0px;
     border-radius:0px 0px 10px 10px;
-    background-color: var(--input-bg-color);
+    background: var(--input-bg-color)!important;
     outline: none;  
     color:white;
+   
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow:0 0 0 35px var(--input-bg-color) inset;
+    -webkit-text-fill-color: #fff;
 }
 
 .btn-save{
-    position:absolute;
-    right:170px;
-    bottom:72px;
     background-color: var(--input-bg-color);
     border-style: none;
     color:white;
     cursor:pointer;
+    height:20px;
 }
+
 
 .btn-save:hover{
     text-decoration:underline;
