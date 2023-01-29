@@ -1,4 +1,4 @@
-import '../style/pages/tasks.css'
+import '../style/style.css'
 import Form from '../components/Form'
 import Items from '../components/Items'
 import { useState, useEffect } from 'react'
@@ -6,15 +6,14 @@ import { useState, useEffect } from 'react'
 function Tasks() {
 
     // On récupère les données dans le local Storage
-    const data = JSON.parse(localStorage.getItem('items'))
+    const data = JSON.parse(localStorage.getItem('task'))
 
     const [items, setItems] = useState(data || [])
 
     // On enregistre les données dans le local Storage
     useEffect(() => {
-        localStorage.setItem('items', JSON.stringify(items));
+        localStorage.setItem('task', JSON.stringify(items));
     }, [items]);
-
 
     const deleteTask = (index) => {
         const filterTask = items

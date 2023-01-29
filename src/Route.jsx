@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Tasks from './pages/Tasks'
 import List from './pages/List'
-import NewList from './pages/NewList'
 import Error from './pages/Error'
 import NavBar from './components/NavBar'
 
@@ -14,7 +13,6 @@ function Routing() {
             <Routes>
                 <Route exact path='/' element={<Tasks />}></Route>
                 <Route path='/list' element={<List />}></Route>
-                <Route path='/newlist' element={<NewList />}></Route>
                 <Route path='*' element={<Error />}></Route>
             </Routes>
         </BrowserRouter>

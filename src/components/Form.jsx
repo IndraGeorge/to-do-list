@@ -2,7 +2,6 @@ import '../style/components/form.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
-import Button from './Button'
 
 function Form({ addTodo }) {
 
@@ -14,15 +13,13 @@ function Form({ addTodo }) {
 
     const onSubmit = (event) => {
         event.preventDefault()
-
         const itemTask = event.currentTarget.elements.name.value
-        addTodo(itemTask)
-
         if (itemTask !== "") {
+            addTodo(itemTask)
             setTask(!task)
-        }
 
-        event.target.reset()
+            event.target.reset()
+        }
     }
 
     return (
@@ -31,7 +28,7 @@ function Form({ addTodo }) {
                 <form onSubmit={onSubmit}>
                     <input type='text' id='name' placeholder='New task'
                     ></input>
-                    <Button type='submit' className='btn-save'>Save</Button>
+                    <button type='submit' className='btn-save'>Save</button>
                 </form>
                 : null}
             <FontAwesomeIcon onClick={addTask} className={task ? 'invisible' : 'add'} icon={faCirclePlus} />

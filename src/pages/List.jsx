@@ -1,10 +1,16 @@
-import '../style/pages/mylist.css'
+import '../style/style.css'
+import Form from '../components/Form'
 
 function List() {
+
     return (
-        <div className="my-list">
-            List
+        <div className="wrapper">
+            <div className='my-list'>
+
+            </div>
+            <Form />
         </div>
+
     )
 }
 

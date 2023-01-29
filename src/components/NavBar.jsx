@@ -12,16 +12,16 @@ function NavBar() {
                     </NavLink>
                 </li>
 
-                <li className='link show'>
+                <li className='link'>
                     <NavLink className={({ isActive }) => isActive ? 'active border' : 'active'} to='/list'>
-                        Name list
+                        List
                     </NavLink>
                 </li>
 
                 <li className='link'>
-                    <NavLink className={({ isActive }) => isActive ? 'active border' : 'active'} to='/newlist'>
+                    <button className='btn-list'>
                         + New list
-                    </NavLink>
+                    </button>
                 </li>
             </ul>
         </div>

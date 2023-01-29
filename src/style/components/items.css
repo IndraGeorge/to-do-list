@@ -12,11 +12,14 @@
     text-decoration-line: line-through;
 }
 
-
 .block-check {
     display: flex;
     align-items: center;
     padding: 1px 4px;
+}
+
+.no-check{
+    cursor:pointer;
 }
 
 .check{

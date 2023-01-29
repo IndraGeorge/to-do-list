@@ -16,8 +16,8 @@ function Items(props) {
         <div className={`task ${check && 'barre'}`}  >
             <div className='block-check'>
                 {check ?
-                    <FontAwesomeIcon icon={faCheck} />
-                    : <FontAwesomeIcon className='check' onClick={handleCheck} icon={faCircle} />
+                    <FontAwesomeIcon className='check' icon={faCheck} onClick={handleCheck} />
+                    : <FontAwesomeIcon className='no-check' icon={faCircle} onClick={handleCheck} />
                 }
                 <span className='name'>{props.children}</span>
             </div>

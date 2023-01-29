@@ -1,3 +1,7 @@
+:root {
+    --input-bg-color:#535c68
+}
+
 body{
     margin:0 ;
     padding:0;
@@ -19,4 +23,16 @@ body{
     background-color: #2d3436;
     border-radius:10px;
     box-shadow: 2px 4px 10px 3px black;
+}
+
+.tasks-list{
+    height:390px;
+}
+
+.my-list{
+    height:390px;
+}
+
+.error{
+    height:392px;
 }
