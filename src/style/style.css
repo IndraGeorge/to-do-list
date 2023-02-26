@@ -36,3 +36,16 @@ body{
 .error{
     height:392px;
 }
+
+@media screen and (max-width:570px) {
+    .container{
+        width: 420px;
+}
+    }
+
+
+@media screen and (max-width:450px){
+    .container{
+        width:90%;
+    }
+}
