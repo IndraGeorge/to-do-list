@@ -2,23 +2,15 @@ import '../style/components/items.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faCircle } from '@fortawesome/free-regular-svg-icons'
-import { useState } from 'react'
 
 export function Items(props) {
 
-    const [check, setCheck] = useState(false)
-
-    // Cross out task when completed
-    const handleCheck = () => {
-        setCheck(!check)
-    }
-
     return (
-        <div className={`task ${check && 'barre'}`}  >
+        <div className={`task ${props.completed && 'barre'}`}  >
             <div className='block-check'>
-                {check ?
-                    <FontAwesomeIcon className='check' icon={faCheck} onClick={handleCheck} />
-                    : <FontAwesomeIcon className='no-check' icon={faCircle} onClick={handleCheck} />
+                {props.completed ?
+                    <FontAwesomeIcon className='check' icon={faCheck} onClick={props.onClick} />
+                    : <FontAwesomeIcon className='no-check' icon={faCircle} onClick={props.onClick} />
                 }
                 <span className='name'>{props.children}</span>
             </div>

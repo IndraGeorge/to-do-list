@@ -6,13 +6,26 @@ form{
 
 .input{
     height: 70px;
-    border-radius: 0 0 0 10px;
+    border-radius: 0px 0px 10px 10px;
+    background:#E96F90;
+    box-shadow: 0 0 1px 0 #000;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow:0 0 0 35px #E96F90 inset;
+    -webkit-text-fill-color: #fff;  
+     caret-color: white;
+}
+
+input::placeholder{
+    color:#fff;
 }
 
 .add{
     text-align: center;
     position: relative;
     left: 47%;
+    top: -25px;
     font-size: 35px;
     cursor: pointer;
     color:var(--primary-color);
@@ -22,16 +35,15 @@ form{
     display:none;
 }
 
-
 #name{
     width:496px;
     height: 68px;
     border-width:0px;
     border-radius:0px 0px 10px 10px;
-    background: var(--input-bg-color)!important;
+    background: #E96F90!important;
     outline: none;  
     padding-left: 10px;
-    color:#1e272e;
+    color:#fff;
 }
 
 .btn-save{

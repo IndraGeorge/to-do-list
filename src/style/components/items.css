@@ -8,10 +8,6 @@
     color:#1e272e;
 }
 
-::selection{
-    background:#bdc3c7;
-}
-
 .tasks-list{
     min-height:430px;
 }
