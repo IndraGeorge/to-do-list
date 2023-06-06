@@ -1,25 +1,22 @@
 import '../style/style.css'
-import Form from '../components/Form'
-import Items from '../components/Items'
+import { Form } from '../components/Form'
+import { Items } from '../components/Items'
 import { useState, useEffect } from 'react'
 
-function Tasks() {
+export function Tasks() {
 
-    // On récupère les données dans le local Storage
-    const data = JSON.parse(localStorage.getItem('task'))
+    const [items, setItems] = useState(JSON.parse(localStorage.getItem('task')) || [])
 
-    const [items, setItems] = useState(data || [])
-
-    // On enregistre les données dans le local Storage
+    // Save data to local storage
     useEffect(() => {
         localStorage.setItem('task', JSON.stringify(items));
     }, [items]);
 
+    // Remove task
     const deleteTask = (index) => {
         const filterTask = items
         filterTask.splice(index, 1)
         setItems([...filterTask])
-        localStorage.setItem('items', JSON.stringify(filterTask));
     }
 
     return (
@@ -40,4 +37,3 @@ function Tasks() {
     )
 }
 
-export default Tasks;

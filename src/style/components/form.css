@@ -4,23 +4,19 @@ form{
     align-items: center;
 }
 
-
 .input{
-    background:var(--input-bg-color);
     height: 70px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 0 10px;
 }
-
 
 .add{
     text-align: center;
     position: relative;
     left: 47%;
-    top: -15px;
     font-size: 35px;
     cursor: pointer;
+    color:var(--primary-color);
 }
-
 
 .invisible{
     display:none;
@@ -34,24 +30,24 @@ form{
     border-radius:0px 0px 10px 10px;
     background: var(--input-bg-color)!important;
     outline: none;  
-    color:white;
-   
-}
-
-input:-webkit-autofill {
-	-webkit-box-shadow:0 0 0 35px var(--input-bg-color) inset;
-    -webkit-text-fill-color: #fff;
+    padding-left: 10px;
+    color:#1e272e;
 }
 
 .btn-save{
-    background-color: var(--input-bg-color);
-    border-style: none;
-    color:white;
     cursor:pointer;
-    height:20px;
+    background-color:var(--primary-color);
+    margin-right:5px;
+    color:#fff;
+    border-radius:3px;
+    border:1px solid var(--primary-color);
+    padding:12px;
+    font-weight:bold;
+    transition:200ms;
 }
-
 
 .btn-save:hover{
-    text-decoration:underline;
+    background-color: #182297;
 }
+
+

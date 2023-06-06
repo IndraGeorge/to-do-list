@@ -1,11 +1,10 @@
 import '../style/style.css'
 
-function Error() {
+export function Error() {
     return (
         <div className="error">
-            Error
+            Oups ! Cette page n'existe pas !
         </div>
     )
 }
 
-export default Error;

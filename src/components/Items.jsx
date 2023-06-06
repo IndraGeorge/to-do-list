@@ -4,10 +4,11 @@ import { faTrash, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faCircle } from '@fortawesome/free-regular-svg-icons'
 import { useState } from 'react'
 
-function Items(props) {
+export function Items(props) {
 
     const [check, setCheck] = useState(false)
 
+    // Cross out task when completed
     const handleCheck = () => {
         setCheck(!check)
     }
@@ -26,4 +27,3 @@ function Items(props) {
     )
 }
 
-export default Items;

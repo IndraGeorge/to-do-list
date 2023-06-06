@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 
-function Form({ addTodo }) {
+export function Form({ addTodo }) {
 
     const [task, setTask] = useState(false)
 
@@ -36,4 +36,3 @@ function Form({ addTodo }) {
     )
 }
 
-export default Form;

@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@500&display=swap');
+
 :root {
-    --input-bg-color:#535c68
+    --input-bg-color:#F0F1F9;
+    --primary-color:#2935B6;
 }
 
 body{
     margin:0 ;
     padding:0;
     box-sizing: border-box;
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255, 255, 255, 0.3)),
-    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    background-size: cover;
-    background-position: center ;
-    color:#fff;
+    background:#B2BDE2;
+    font-family:'chewy',sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:#1e272e;
 }
 
 .container {  
@@ -20,17 +25,10 @@ body{
     justify-content: start;
     width: 500px;
     min-height: 500px;
-    background-color: #2d3436;
+    background-color: var(--input-bg-color);
     border-radius:10px;
-    box-shadow: 2px 4px 10px 3px black;
-}
-
-.tasks-list{
-    height:390px;
-}
-
-.my-list{
-    height:390px;
+    box-shadow: 0 0 10px #7f8fa6;
+    margin-top:0;
 }
 
 .error{
@@ -40,8 +38,8 @@ body{
 @media screen and (max-width:570px) {
     .container{
         width: 420px;
-}
     }
+}
 
 
 @media screen and (max-width:450px){

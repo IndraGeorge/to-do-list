@@ -3,9 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #353b48;
-    border: 1px solid white;
     height: 24px;
+    border-radius:2px;
+    color:#1e272e;
+}
+
+::selection{
+    background:#bdc3c7;
+}
+
+.tasks-list{
+    min-height:430px;
 }
 
 .barre{
@@ -31,8 +39,7 @@
 }
 
 .delete{
-    background:#353b48;
     border-style:none;
-    color:white;
     cursor:pointer;
+    color:#1e272e;
 }
