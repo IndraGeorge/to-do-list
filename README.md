@@ -1,3 +1,5 @@
 # To-do-list
 
-Il s'agit d'une application web créer avec la librairie ReatcJS
+![cover](https://github.com/IndraGeorge/to-do-list/blob/main/public/favicon.png)
+
+https://to-do-app-bb6ea.web.app/
