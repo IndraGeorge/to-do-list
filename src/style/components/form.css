@@ -7,12 +7,13 @@ form{
 .input{
     height: 70px;
     border-radius: 0px 0px 10px 10px;
-    background:#E96F90;
+    background:var(--color-input);
     box-shadow: 0 0 1px 0 #000;
+    position:relative;
 }
 
 input:-webkit-autofill {
-	-webkit-box-shadow:0 0 0 35px #E96F90 inset;
+	-webkit-box-shadow:0 0 0 35px var(--color-input) inset;
     -webkit-text-fill-color: #fff;  
      caret-color: white;
 }
@@ -22,7 +23,6 @@ input::placeholder{
 }
 
 .add{
-    text-align: center;
     position: relative;
     left: 47%;
     top: -25px;
@@ -40,7 +40,7 @@ input::placeholder{
     height: 68px;
     border-width:0px;
     border-radius:0px 0px 10px 10px;
-    background: #E96F90!important;
+    background: var(--color-input)!important;
     outline: none;  
     padding-left: 10px;
     color:#fff;
@@ -63,3 +63,8 @@ input::placeholder{
 }
 
 
+@media  screen and (max-width:500px) {
+    .input{
+        border-radius:0;
+    }
+}

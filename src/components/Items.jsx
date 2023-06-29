@@ -12,7 +12,7 @@ export function Items(props) {
                     <FontAwesomeIcon className='check' icon={faCheck} onClick={props.onClick} />
                     : <FontAwesomeIcon className='no-check' icon={faCircle} onClick={props.onClick} />
                 }
-                <span className='name'>{props.children}</span>
+                <div className='name'>{props.children}</div>
             </div>
             <button className='delete' onClick={props.remove} ><FontAwesomeIcon icon={faTrash} /></button>
         </div>

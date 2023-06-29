@@ -32,10 +32,12 @@
 
 .name{
     padding-left:10px;
+    word-break: break-word;
 }
 
 .delete{
     border-style:none;
     cursor:pointer;
     color:#1e272e;
+    background-color: transparent;
 }

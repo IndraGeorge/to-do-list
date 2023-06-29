@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 :root {
-    --input-bg-color:#F0F1F9;
-    --primary-color:#2935B6;
+    --input-bg-color:#F4F4F4;
+    --primary-color:#3455a9;
+    --color-input:#c74a72;
 }
 
 body{
     margin:0 ;
     padding:0;
     box-sizing: border-box;
-    background:#B2BDE2;
-    font-family:'chewy',sans-serif;
+    font-family:'Chewy',sans-serif;
+    background-color: #b3bbd0;
 }
 
 h1{
     text-align:center;
     color:#1e272e;
+    font-size:48px;
 }
 
 .container {  
     margin: 70px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 500px;
+    max-width: 500px;
     min-height: 500px;
     background-color: var(--input-bg-color);
     border-radius:10px;
@@ -35,15 +34,13 @@ h1{
     height:392px;
 }
 
-@media screen and (max-width:570px) {
+
+@media screen  and (max-width:500px) {
     .container{
-        width: 420px;
+        border-radius:0;
     }
-}
 
-
-@media screen and (max-width:450px){
-    .container{
-        width:90%;
+    h1{
+        font-size:40px;
     }
 }
