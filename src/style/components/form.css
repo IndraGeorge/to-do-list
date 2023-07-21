@@ -1,70 +1,67 @@
-
-form{
-    display:flex;
-    align-items: center;
+form {
+  display: flex;
+  align-items: center;
 }
 
-.input{
-    height: 70px;
-    border-radius: 0px 0px 10px 10px;
-    background:var(--color-input);
-    box-shadow: 0 0 1px 0 #000;
-    position:relative;
+.input {
+  height: 70px;
+  border-radius: 0px 0px 10px 10px;
+  background: var(--color-input);
+  box-shadow: 0 0 1px 0 #000;
 }
 
 input:-webkit-autofill {
-	-webkit-box-shadow:0 0 0 35px var(--color-input) inset;
-    -webkit-text-fill-color: #fff;  
-     caret-color: white;
+  -webkit-box-shadow: 0 0 0 35px var(--color-input) inset;
+  -webkit-text-fill-color: #fff;
+  caret-color: white;
 }
 
-input::placeholder{
-    color:#fff;
+input::placeholder {
+  color: #fff;
 }
 
-.add{
-    position: relative;
-    left: 47%;
-    top: -25px;
-    font-size: 35px;
-    cursor: pointer;
-    color:var(--primary-color);
+.add {
+  position: relative;
+  left: 47%;
+  top: -25px;
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
-.invisible{
-    display:none;
+.invisible {
+  display: none;
 }
 
-#name{
-    width:496px;
-    height: 68px;
-    border-width:0px;
-    border-radius:0px 0px 10px 10px;
-    background: var(--color-input)!important;
-    outline: none;  
-    padding-left: 10px;
-    color:#fff;
+#name {
+  width: 496px;
+  height: 68px;
+  border-width: 0px;
+  border-radius: 0px 0px 10px 10px;
+  background: var(--color-input) !important;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
 }
 
-.btn-save{
-    cursor:pointer;
-    background-color:var(--primary-color);
-    margin-right:5px;
-    color:#fff;
-    border-radius:3px;
-    border:1px solid var(--primary-color);
-    padding:12px;
-    font-weight:bold;
-    transition:200ms;
+.btn-save {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  transition: 200ms;
 }
 
-.btn-save:hover{
-    background-color: #182297;
+.btn-save:hover {
+  background-color: #6c5b50;
 }
 
-
-@media  screen and (max-width:500px) {
-    .input{
-        border-radius:0;
-    }
+@media screen and (max-width: 500px) {
+  .input {
+    border-radius: 0;
+  }
 }

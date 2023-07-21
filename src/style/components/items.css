@@ -1,43 +1,42 @@
-.task{
-    margin:10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 24px;
-    border-radius:2px;
-    color:#1e272e;
+.task {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  border-radius: 2px;
 }
 
-.tasks-list{
-    min-height:430px;
+.tasks-list {
+  min-height: 430px;
+  padding: 10px 10px 0 10px;
 }
 
-.barre{
-    text-decoration-line: line-through;
+.barre {
+  text-decoration-line: line-through;
 }
 
 .block-check {
-    display: flex;
-    align-items: center;
-    padding: 1px 4px;
+  display: flex;
+  align-items: center;
+  padding: 1px 4px;
 }
 
-.no-check{
-    cursor:pointer;
+.no-check {
+  cursor: pointer;
 }
 
-.check{
-    cursor: pointer;
+.check {
+  cursor: pointer;
 }
 
-.name{
-    padding-left:10px;
-    word-break: break-word;
+.name {
+  padding-left: 10px;
+  word-break: break-word;
 }
 
-.delete{
-    border-style:none;
-    cursor:pointer;
-    color:#1e272e;
-    background-color: transparent;
+.delete {
+  border-style: none;
+  cursor: pointer;
+  background-color: transparent;
 }

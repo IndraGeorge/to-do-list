@@ -6,6 +6,7 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons'
 export function Items(props) {
 
     return (
+        <>
         <div className={`task ${props.completed && 'barre'}`}  >
             <div className='block-check'>
                 {props.completed ?
@@ -16,6 +17,8 @@ export function Items(props) {
             </div>
             <button className='delete' onClick={props.remove} ><FontAwesomeIcon icon={faTrash} /></button>
         </div>
+        <hr/>
+        </>  
     )
 }
 
