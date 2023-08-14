@@ -1,11 +1,13 @@
 import '../style/style.css'
 import { Form } from '../components/Form'
 import { Items } from '../components/Items'
+import Todo from "../assets/image.png"
 import { useState, useEffect } from 'react'
 
 export function Tasks() {
 
     const [items, setItems] = useState(JSON.parse(localStorage.getItem('task')) || [])
+    const [image,setImage] = useState(false)
 
     // Save data to local storage
     useEffect(() => {
@@ -25,9 +27,18 @@ export function Tasks() {
         setItems(updatedItems);
     };
 
+    useEffect(() => {
+        setImage(items.length === 0)
+    }, [items])
+
     return (
         <div className='wrapper'>
-            <div className='tasks-list'>
+            <h1>To do list</h1>
+            <div className={`tasks-list ${image ? 'center-img': ""}`}>
+                { image ?
+                  <img src={Todo} alt="to do list"/>
+                  : ""
+                }
                 {items.map((item, index) => (
                     <Items
                         key={index}

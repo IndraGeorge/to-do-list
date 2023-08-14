@@ -1,43 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 :root {
-  --primary-color: #7e6b60;
-  --color-input: #d0a487;
+  --primary-color: #0c2ce4;
+  --color-input: #f5f5f4;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Chewy", sans-serif;
-  background-color: #efcfc0;
+  font-family: "Roboto Slab", serif;
+  background: #afafb7;
 }
 
 h1 {
-  text-align: center;
-  font-size: 48px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 24px;
 }
 
 .container {
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgb(0, 0, 0);
-  background-color: #f8f0ea;
+  width: 100%;
+  box-shadow: 0 2px 4px #a5a5ad;
+  background: #f5f5f4;
   position: relative;
+  height: 100vh;
+}
+
+img {
+  width: 230px;
+  height: 230px;
+  opacity: 0.4;
 }
 
 .error {
   height: 392px;
 }
 
-@media screen and (max-width: 480px) {
+::-webkit-scrollbar {
+  width: 7px;
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  border: solid 0 transparent;
+  background-color: #b0aeae;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
   .container {
-    max-width: 100%;
-    border-radius: 0;
+    width: 400px;
+    height: 100%;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }

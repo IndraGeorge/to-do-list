@@ -1,6 +1,6 @@
 import '../style/components/form.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCirclePlus } from '@fortawesome/free-solid-svg-icons'
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 
 export function Form({ addTodo }) {
@@ -26,12 +26,12 @@ export function Form({ addTodo }) {
         <div className='input'>
             {task ?
                 <form onSubmit={onSubmit}>
-                    <input type='text' id='name' placeholder='New task'
+                    <input type='text' id='name' placeholder='Nouvelle tâche'
                     ></input>
                     <button type='submit' className='btn-save'>Save</button>
                 </form>
                 : null}
-            <FontAwesomeIcon onClick={addTask} className={task ? 'invisible' : 'add'} icon={faCirclePlus} />
+            <FontAwesomeIcon onClick={addTask} className={task ? 'invisible' : 'add'} icon={faSquarePlus} />
         </div>
     )
 }

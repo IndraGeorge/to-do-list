@@ -17,7 +17,6 @@ export function Items(props) {
             </div>
             <button className='delete' onClick={props.remove} ><FontAwesomeIcon icon={faTrash} /></button>
         </div>
-        <hr/>
         </>  
     )
 }
